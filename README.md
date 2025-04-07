@@ -16,10 +16,10 @@ Follow these steps to set up your development environment:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourgithubprofile/chatbot-pdf-data.git
+git clone https://github.com/iamnishantk/PDF-Question-Answering-RAG-LLM
 
 # Navigate to the project directory
-cd chatbot-pdf-data
+cd PDF-Question-Answering-RAG-LLM
 
 # Install necessary Python packages
 pip install -r requirements.txt
@@ -45,6 +45,9 @@ The project is structured around several key steps:
 4. **Vector Embedding**: Generating vector embeddings for the chunks using `CohereEmbeddings`.
 5. **Chatbot Implementation**: Creating a chatbot that queries a Pinecone vector database to fetch relevant content.
 
+## Pdf used
+- for now I'm using aria WFM documents (https://wfm-doc.ariacec.com/#/)
+
 ### Tools and Libraries Used
 
 - Jupyter Notebook: For interactive development and demonstrations.
@@ -54,6 +57,11 @@ The project is structured around several key steps:
 ### Implementation Details
 
 The notebook includes detailed code cells for each step of the process, from loading and processing documents to initializing and querying the chatbot.
+
+### upcoming changes
+- there is some problem if content got seprated and available in next page, then chunks is not properly made.
+- need to explore further more for how to use web pages.
+- I'll integrate chat also, will use any third party chat. there will option to select for which document or source we need Q&A.
 
 
 
